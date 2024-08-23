@@ -8,7 +8,6 @@ answer, b = 0,0
 i=0
 while k>0:
     answer += k // arr[i]
-    b = k % arr[i]
-    k = b
+    k %= arr[i]
     i += 1
 print(answer)
